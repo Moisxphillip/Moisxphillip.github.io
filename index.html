@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of projects and experiences">
+    <link rel="icon" type="image/png" href="assets/icon/terminal-icon.png" ><!--prev: https://github.com/Moisxphillip.png-->
+    <title>Moisés Felipe de Lima - Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+        
+<body>
+    <header class =  "site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="brand" href="index.html"> Portfolio <!--<span>.</span> --> </a> <!--Text from main top bar-->
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button> <!--Button to toggle navigation menu-->
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="models.html">3D Works</a>
+                <a href="music.html">Music</a>
+                <a href="cv.html">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="background">
+        <div class="stars" alt=""></div>
+        <img class="moon"  src="assets/svg/moon.svg"  alt="">
+        <!-- <img class="trees" src="assets/svg/trees2.svg" alt=""> TODO: rework them-->
+    </div>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow">Computer Science | Game and Engine Development | Godot | 3D Modelling | Music/SFX</p>
+                
+                <h1>Building worlds with <em>code, shapes and sounds.</em></h1> <!--The big text on main page-->
+
+                <p class="hero-text">
+                    I'm <strong>Moisés Felipe de Lima</strong>, a Computer Science bachelor interested in software
+                    engineering, game and engine development, 3D art and sound design. Building 
+                    software piece by piece, finding bottlenecks and working around them, breaking and rebuilding stuff
+                    is rewarding and fun.
+                </p>
+
+                <div class="actions">
+                    <a class="button primary" href="#projects">Explore projects</a>
+                    <a class="button secondary" href="cv.html">View resume</a>
+                </div>
+                
+                <div class="socials">
+                    <a href="https://github.com/Moisxphillip" target="_blank" rel="noopener">
+                        <img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/spiritw" target="_blank" rel="noopener">
+                        <img src="assets/icon/linkedin-icon.png" alt="LinkedIn icon" class="link-icon"> LinkedIn ↗</a>
+                    <a href="mailto:lima.brew@gmail.com">📧 Email ↗</a>
+                </div>
+            </div>
+
+        <!--Decorative terminal-->
+        <aside class="hero-card" aria-label="Developer profile terminal">
+        <div class="terminal-bar"><span></span><span></span><span></span></div>
+<!--Indentation here affects the output-->        
+<pre><code><span class="muted">$</span> whoami
+<span class="accent">Moisés / Spiritw</span>
+
+<span class="muted">$</span> craft
+code
+<span class="accent">worlds</span>
+sounds
+
+<span class="muted">$</span> currently
+building: personal and group projects
+<span class="accent">learning: unity, c#</span>
+        </code></pre>
+        </aside>
+        </section>
+        
+        <!--About section-->
+        <section id="about" class="section container">
+            <div class="section-heading">
+                <h2>About me</h2>
+            </div>
+            <div class="two-column">
+                <div>
+                    <p>
+                        Since discovering the world of game development, I decided to take the path of the code and go further into what it takes
+                        to make good game systems. This drove me to a Computer Science major, which exposed me to multiple aspects of this field: 
+                        low-level programming, project standards, algorithms and efficiency, game engine structure, and finally, game development.
+                    </p>
+                    <p>
+                        Outside programming, I'm learning 3D modelling and music composition so I can have more tools for building the worlds I've always dreamed about.
+                    </p>
+                </div>
+                <!--A simple fact list is easier to scan than a paragraph of biography.-->
+                <div class="fact-list">
+                    <div><span>Location</span><strong>Brazil (UTC -3)</strong></div>
+                    <div><span>Degree</span><strong>Computer Science</strong></div>
+                    <div><span>Interests</span><strong>Software, Games, 3D, Music, SFX</strong></div>
+                    <div><span>Languages</span><strong>Portuguese, English</strong></div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!--Card structure makes comparison easier-->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- ####################### GIVE IT BACK ########################################################################## -->
+                    <article class="project featured">
+                        <!--TODO: Replace this placeholder with an image or video thumbnail. -->
+                        <div class="project-media project-image">
+                            <img
+                            src="assets/project/GiveItBack.png"
+                            alt="Our hero exploring the forest"
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>01</span><span>Game / Engine</span></div>
+                            <h3>Give It Back (Lichen Engine)</h3>
+                            <p>An action RPG with a fantasy theme, using the Lichen Engine, made from scratch. This
+                                project presented lots of challenges, from making the graphics part to the physics system interactions.
+                            </p> <!--TODO: rewrite-->
+                            <ul class="tags">
+                                <li>Self-Made Engine</li>
+                                <li>C++</li>
+                                <li>OpenGL</li>
+                                <li>Gameplay</li>
+                                <li>Physics</li>
+                                <li>Music</li>
+                                <li>SFX</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Moisxphillip/Lichen" target="_blank"
+                                rel="noopener"><img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <a href="https://www.youtube.com/watch?v=L0sFqL6g3wU" target="_blank"
+                                rel="noopener"><img src="assets/icon/youtube-icon.png" alt="Youtube icon" class="link-icon"> Video ↗</a>
+                                <!-- Remove disabled-link when you have a real playable-demo URL. -->
+                                <!-- <a href="#" class="disabled-link">Demo →</a> -->
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ############################# MELIUS ############################################################## -->
+        
+                    <article class="project">
+                        <div class="project-media project-image">
+                            <img
+                            src="assets/project/Melius.png"
+                            alt="Jumping through the surface of the world"
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>02</span><span>Game</span></div>
+                            <h3>Melius</h3>
+                            <p>A Metroidvania game made with a custom engine. A lot of creativity is present in this one, on systems 
+                                like collider merging for collision optimization and scene switch management.</p>
+                            <ul class="tags">
+                                <li>C++</li>
+                                <li>Custom Engine</li>
+                                <li>SDL 2</li>
+                                <li>Gameplay</li>
+                                <li>Git</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://www.youtube.com/watch?v=x35G0LIo9qY"
+                                target="_blank" rel="noopener"><img src="assets/icon/youtube-icon.png" alt="GitHub icon" class="link-icon"> Video ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ##################################### CATCH'EM BUGS ######################################################################### -->
+        
+                    <article class="project">
+                        <div class="project-media project-image">
+                            <img
+                            src="assets/project/CatchEmBugs.png"
+                            alt=""
+                        >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>03</span><span>Game / Firmware</span></div>
+                            <h3>Catch'Em Bugs!</h3>
+                            <p>A Godot 4 game made for studying the viability of vibration as a directional awareness source. 
+                                The game interacted with an ESP32-powered wearable device, and associated directional haptic 
+                                feedback with game objectives</p>
+                            <ul class="tags">
+                                <li>Godot 4</li>
+                                <li>3D</li>
+                                <li>Blender</li>
+                                <li>ESP32</li>
+                                <li>Experimental</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Moisxphillip/tcc"
+                                target="_blank" rel="noopener"><img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <a href="https://www.youtube.com/watch?v=1D8sRa-zkM0"
+                                target="_blank" rel="noopener"><img src="assets/icon/youtube-icon.png" alt="Youtube icon" class="link-icon"> Video ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ######################################## DEBTALE ###################################################################### -->
+
+                    <article class="project">
+                        <div class="project-media project-image">
+                            <img
+                            src="assets/project/DebTale.png"
+                            alt=""
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>04<!--Small number--></span><span>Game</span></div>
+                            <h3>DebTale</h3> <!--NAME-->
+                            <p>A 3D farm simulator where you have to pay your debts by planting and selling flowers and getting rid of the pests.</p><!--Description-->
+                            <ul class="tags">
+                                <li>Godot 4</li>
+                                <li>3D</li>
+                                <li>Cozy</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Moisxphillip/HarvestGame"
+                                target="_blank" rel="noopener"><img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <a href="https://www.youtube.com/watch?v=0oF7VM6ckjs"
+                                target="_blank" rel="noopener"><img src="assets/icon/youtube-icon.png" alt="GitHub icon" class="link-icon"> Video ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ######################################### MK2 - RISC-V ##################################################################### -->
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img
+                            src="assets/project/MK.png"
+                            alt=""
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>05<!--Small number--></span><span>Software / Game</span></div>
+                            <h3>MKII - RISC-V</h3> <!--NAME-->
+                            <p>A Mortal Kombat game made in group for RISC-V processors, as a challenge on low-level development and optimization.</p><!--Description-->
+                            <ul class="tags">
+                                <li>Assembly</li>
+                                <li>RISC-V</li>
+                                <li>Low-level</li>
+                                <li>Fighting games</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Moisxphillip/MKII"
+                                target="_blank" rel="noopener"> <img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <a href="https://www.youtube.com/watch?v=E9QdxgkrMdM"
+                                target="_blank" rel="noopener"><img src="assets/icon/youtube-icon.png" alt="Youtube icon" class="link-icon"> Video ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ############################################## CHERIMOYA ################################################################ -->
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img
+                            src="assets/project/Cherimoya.png"
+                            alt=""
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>06<!--Small number--></span><span>Software / Game</span></div>
+                            <h3>Cherimoya</h3> <!--NAME-->
+                            <p>Collect fruits with your scooter to score. Don't forget to keep an eye on the gas!</p><!--Description-->
+                            <ul class="tags">
+                                <li>Godot 4</li>
+                                <li>3D</li>
+                                <li>GMTK 2026</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Moisxphillip/GMTK2026"
+                                target="_blank" rel="noopener"><img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <a href="https://spiritw.itch.io/cherimoya"
+                                target="_blank" rel="noopener"><img src="assets/icon/itch-icon.png" alt="Itch icon" class="link-icon"> Executable ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ################################################# THE VOPS ############################################################# -->
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img
+                            src="assets/project/TheVops.png"
+                            alt="Our hero exploring the forest"
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>07<!--Small number--></span><span>Software / Game</span></div>
+                            <h3>TheVops</h3> <!--NAME-->
+                            <p>A game about scalability in the process of development. A creative merge of 2D and 3D art.</p><!--Description-->
+                            <ul class="tags">
+                                <li>Godot 4</li>
+                                <li>3D</li>
+                                <li>HD-2D</li>
+                                <li>GMTK 2024</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Moisxphillip/GMTK2024"
+                                target="_blank" rel="noopener"><img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <a href="https://spiritw.itch.io/the-vops"
+                                target="_blank" rel="noopener"><img src="assets/icon/itch-icon.png" alt="Itch icon" class="link-icon"> Executable ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ###################################################### TICK INVASION ######################################################## -->
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img
+                            src="assets/project/TickInvasion.png"
+                            alt=""
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>08<!--Small number--></span><span>Software / Game</span></div>
+                            <h3>Tick Invasion</h3> <!--NAME-->
+                            <p>Clean up the park from the ticks and manage your bullets to survive, if you can!</p><!--Description-->
+                            <ul class="tags">
+                                <li>Godot 4</li>
+                                <li>3D</li>
+                                <li>Resource Management</li>
+                                <li>Ludum Dare 56</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Moisxphillip/LudumDare56"
+                                target="_blank" rel="noopener"><img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <a href="https://spiritw.itch.io/tick-invasion"
+                                target="_blank" rel="noopener"><img src="assets/icon/itch-icon.png" alt="Itch icon" class="link-icon"> Executable ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ################################################# SHOOT'EM UP ############################################################# -->
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img
+                            src="assets/project/ShootEmUp.png"
+                            alt=""
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>09<!--Small number--></span><span>Software / Game</span></div>
+                            <h3>Shoot'Em Up</h3> <!--NAME-->
+                            <p>A shooting game where a mecha must protect Earth from a cosmic attacker and its minions.</p><!--Description-->
+                            <ul class="tags">
+                                <li>Godot 4</li>
+                                <li>2D</li>
+                                <li>Shmup</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/KvotheKS/ElJuego"
+                                target="_blank" rel="noopener"><img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <a href="https://www.youtube.com/watch?v=v=yy3CGh9ro-g"
+                                target="_blank" rel="noopener"><img src="assets/icon/youtube-icon.png" alt="Youtube icon" class="link-icon"> Video ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ################################################# Demon King Wizard Hat Escape ############################################################# -->
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img
+                            src="assets/project/DKWHE.png"
+                            alt=""
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>10<!--Small number--></span><span>Software / Game</span></div>
+                            <h3>Demon King Wizard Hat Escape</h3> <!--NAME-->
+                            <p>First game jam entry ever, as well as the first game project in a group.</p><!--Description-->
+                            <ul class="tags">
+                                <li>Godot 3</li>
+                                <li>2D</li>
+                                <!-- <li>Resource Management</li> -->
+                                <li>Ludum Dare 51</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/KvotheKS/LDJam51"
+                                target="_blank" rel="noopener"><img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <a href="https://spiritw.itch.io/wizard-hat-escape"
+                                target="_blank" rel="noopener"><img src="assets/icon/itch-icon.png" alt="Itch icon" class="link-icon"> Executable ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ############################################################################################################## -->
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img
+                            src="assets/project/aes.png"
+                            alt=""
+                            >
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>11<!--Small number--></span><span>Software / Game</span></div>
+                            <h3>RSA+AES Encryption/Decryption</h3> <!--NAME-->
+                            <p>A tool for RSA key generation, AES encryption and decryption of data, made to learn a bit more about computer security.</p><!--Description-->
+                            <ul class="tags">
+                                <li>Python</li>
+                                <li>Cryptography</li>
+                                <li>Tools</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Moisxphillip/SCP2"
+                                target="_blank" rel="noopener"><img src="assets/icon/github-icon.png" alt="GitHub icon" class="link-icon"> Repository ↗</a>
+                                <!-- <a href="https://www.youtube.com/watch?v=0oF7VM6ckjs"
+                                target="_blank" rel="noopener"><img src="assets/icon/youtube-icon.png" alt="Youtube icon" class="link-icon"> Video ↗</a> -->
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ############################################################################################################## -->
+
+                </div>
+            </div>
+        </section>
+
+        
+        <!--Education section-->
+        <section id="education" class="section container">
+            <div class="section-heading">
+                <h2>Education</h2>
+            </div>
+            <div class="timeline-item">
+                <div>
+                    <!-- <p class="eyebrow">2019 - 2026, Completed</p> -->
+                    <h3>Bachelor's Degree in Computer Science</h3>
+                </div>
+                <p class="timeline-date">2019 – 2026, Completed</p>
+            </div>
+            <p class="muted">University of Brasília (UnB)</p>
+        </section>
+        
+
+        <!--Groups of skills organized-->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <p>C++, GDScript, Python, C, GLSL, C#</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Game Development</h3>
+                        <p>Godot,  Unity,  Gameplay Systems,  AI,  3D</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools</h3>
+                        <p>Git,  GitHub,  Blender,  VS Code,  Premake</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Foundations</h3>
+                        <p>Algorithms,  Data Structures,  OOP,  Computer Architecture,  Multithreading</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section for the other works, not mixed with main page-->
+        <section class="section container">
+            <div class="section-heading">
+                <h2>Other Crafts</h2>
+            </div>
+            <div class="craft-grid">
+                <a class="craft-card" href="models.html">
+                    <span class="craft-number"></span>
+                    <div class="craft-icon">◇</div>
+                    <h3>3D Modelling</h3>
+                    <!-- <p>Work in Progress.</p> -->
+                    <span class="craft-link">Enter gallery →</span>
+                </a>
+                <a class="craft-card" href="music.html">
+                    <span class="craft-number"></span>
+                    <div class="craft-icon">♩</div>
+                    <h3>Music & SFX</h3>
+                    <!-- <p>Work in Progress.</p> -->
+                    <span class="craft-link">Enter archive →</span>
+                </a>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section section-alt contact">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Let's talk</h2>
+                </div>
+                <p>If you'd like to discuss a project, opportunity, or collaboration, reach me out through one of these channels.</p>
+                <div class="actions">
+                    <a class="button primary" href="mailto:lima.brew@gmail.com">E-Mail</a>
+                    <a class="button secondary" href="https://github.com/Moisxphillip" target="_blank" rel="noopener">GitHub ↗</a>
+                    <a class="button secondary" href="https://www.linkedin.com/in/spiritw" target="_blank" rel="noopener">LinkedIn ↗</a>
+                </div>
+            </div>
+        </section>
+        <!--Pure decoration; aria-hidden keeps it out of the accessibility tree-->
+        <!-- <div class="moon-decoration" aria-hidden="true"></div> -->
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>© <span id="year"></span> Moisés Felipe de Lima</span>
+            <!-- <span>Built by hand.</span> -->
+        </div>
+    </footer>
+
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/parallax.js"></script>
+</html>
+<!-- 2026年09月27日 | 14:58 -->

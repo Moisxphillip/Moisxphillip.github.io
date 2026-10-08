@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio for audio related projects">
+    <link rel="icon" type="image/png" href="assets/icon/terminal-icon.png" ><!--prev: https://github.com/Moisxphillip.png-->
+    <title>Music & SFX - Moisés Felipe de Lima - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="brand" href="index.html"> Portfolio <!--<span>.</span> --> </a> <!--Text from main top bar-->
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button> <!--Button to toggle navigation menu-->
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#education">Education</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="models.html">3D Works</a>
+                <a class="active" href="music.html">Music</a>
+                <a href="cv.html">Resume</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="background">
+        <div class="stars" alt=""></div>
+        <img class="moon"  src="assets/svg/moon.svg"  alt="">
+        <!-- <img class="trees" src="assets/svg/trees2.svg" alt=""> TODO: rework them-->
+    </div>
+
+    <main>
+        <section class="page-hero container">
+            <p class="eyebrow">Creative Practice: Music</p>
+            <h1>Giving worlds a voice <em>through sound.</em></h1>
+            <p class="page-intro">A collection of my sound studies and experiments. Work in progress.</p>
+        </section>
+
+        <section class="section container">
+            <!-- The native HTML audio element supplies play/pause controls without a library. -->
+            <div class="music-list">
+                <article class="track">
+                    <div class="track-number">01</div>
+                    <div class="track-info">
+                        <!-- <p class="eyebrow">Theme | Atmosphere</p> -->
+                        <h2>WIP</h2>
+                        <!-- <p>Describe the idea, instrumentation, mood, or game context.</p> -->
+                    </div>
+                    <!-- Put the real MP3 at assets/audio/track-01.mp3. -->
+                    <!-- <audio controls preload="none">
+                        <source src="assets/audio/track-01.mp3" type="audio/mpeg">Your browser does not support HTML
+                        audio.
+                    </audio> -->
+                </article>
+                <article class="track">
+                    <div class="track-number">02</div>
+                    <div class="track-info">
+                        <!-- <p class="eyebrow">Game Music | Study</p> -->
+                        <h2>WIP</h2>
+                        <!-- <p>Explain what you were studying or trying to achieve.</p> -->
+                    </div>
+                    <!-- <audio controls preload="none">
+                        <source src="assets/audio/track-02.mp3" type="audio/mpeg">Your browser does not support HTML
+                        audio.
+                    </audio> -->
+                </article>
+                <article class="track">
+                    <div class="track-number">03</div>
+                    <div class="track-info">
+                        <!-- <p class="eyebrow">Composition</p> -->
+                        <h2>WIP</h2>
+                        <!-- <p>Add another composition whenever you have something worth showing.</p> -->
+                    </div>
+                    <!-- <audio controls preload="none">
+                        <source src="assets/audio/track-03.mp3" type="audio/mpeg">Your browser does not support HTML
+                        audio.
+                    </audio> -->
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner"><span>© <span id="year"></span> Moisés Felipe de Lima</span><a href="index.html">Back to
+                portfolio ↑</a></div>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+<script src="js/parallax.js"></script>
+</html>

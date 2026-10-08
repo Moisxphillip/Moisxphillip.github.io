@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for the 3D gallery page. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio for 3D modelling projects">
+    <link rel="icon" type="image/png" href="assets/icon/terminal-icon.png" ><!--prev: https://github.com/Moisxphillip.png-->
+    <title>3D Modelling | Moisés Felipe de Lima - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="brand" href="index.html"> Portfolio <!--<span>.</span> --> </a> <!--Text from main top bar-->
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button> <!--Button to toggle navigation menu-->
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#education">Education</a>
+                <a href="index.html#skills">Skills</a>
+                <a class="active" href="models.html">3D Works</a>
+                <a href="music.html">Music</a>
+                <a href="cv.html">Resume</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="background">
+        <div class="stars" alt=""></div>
+        <img class="moon"  src="assets/svg/moon.svg"  alt="">
+        <!-- <img class="trees" src="assets/svg/trees2.svg" alt=""> TODO: rework them-->
+    </div>
+
+    <main>
+        <!-- A secondary-page hero is smaller than the homepage hero. -->
+        <section class="page-hero container">
+            <p class="eyebrow">Creative Practice: 3D</p>
+            <h1>Creating worlds, <em>starting from its bricks.</em></h1>
+            <p class="page-intro">A growing collection of environment pieces, props, materials, and experiments created
+                for games and personal worldbuilding. Work in progress.</p>
+        </section>
+
+        <section class="section container">
+            <!-- Duplicate one gallery-item whenever you create a new asset. -->
+            <div class="gallery-grid">
+                <article class="gallery-item">
+                    <div class="gallery-image fantasy-placeholder">3D IMAGE</div>
+                    <div class="gallery-info">
+                        <!-- <p class="eyebrow">Environment Prop</p> -->
+                        <h2>Project One</h2>
+                        <p>WIP</p>
+                        <ul class="tags">
+                            <!-- <li>Blender</li>
+                            <li>Low Poly</li>
+                            <li>Game Ready</li> -->
+                        </ul>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-image fantasy-placeholder">3D IMAGE</div>
+                    <div class="gallery-info">
+                        <!-- <p class="eyebrow">Architecture</p> -->
+                        <h2>Project Two</h2>
+                        <p>WIP</p>
+                        <ul class="tags">
+                            <!-- <li>Blender</li>
+                            <li>Texturing</li> -->
+                        </ul>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-image fantasy-placeholder">3D IMAGE</div>
+                    <div class="gallery-info">
+                        <!-- <p class="eyebrow">Study</p> -->
+                        <h2>Project Three</h2>
+                        <p>WIP</p>
+                        <ul class="tags">
+                            <!-- <li>Modelling</li>
+                            <li>Materials</li> -->
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner"><span>© <span id="year"></span> Moisés Felipe de Lima</span><a href="index.html">Back to
+                portfolio ↑</a></div>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+<script src="js/parallax.js"></script>
+   
+</html>

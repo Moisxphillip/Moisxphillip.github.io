@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 800"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="stars.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="0.75572037"
+     inkscape:cx="291.11297"
+     inkscape:cy="473.05857"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <g
+     id="g30"
+     transform="translate(0,-30)">
+    <circle
+       cx="100"
+       cy="100"
+       r="2"
+       fill="#d7e4bd"
+       id="circle1" />
+    <circle
+       cx="220"
+       cy="180"
+       r="1.5"
+       fill="#d7e4bd"
+       id="circle2" />
+    <circle
+       cx="430"
+       cy="90"
+       r="2"
+       fill="#d7e4bd"
+       id="circle3" />
+    <circle
+       cx="600"
+       cy="220"
+       r="1"
+       fill="#d7e4bd"
+       id="circle4" />
+    <circle
+       cx="780"
+       cy="120"
+       r="2"
+       fill="#d7e4bd"
+       id="circle5" />
+  </g>
+  <g
+     id="g29"
+     inkscape:label="g29"
+     transform="matrix(-1,0,0,1,999.5,254)">
+    <circle
+       cx="100"
+       cy="100"
+       r="2"
+       fill="#d7e4bd"
+       id="circle18" />
+    <circle
+       cx="220"
+       cy="180"
+       r="1.5"
+       fill="#d7e4bd"
+       id="circle19" />
+    <circle
+       cx="430"
+       cy="90"
+       r="2"
+       fill="#d7e4bd"
+       id="circle20" />
+    <circle
+       cx="780"
+       cy="120"
+       r="2"
+       fill="#d7e4bd"
+       id="circle22" />
+    <circle
+       cx="900"
+       cy="300"
+       r="1.5"
+       fill="#d7e4bd"
+       id="circle23" />
+  </g>
+  <g
+     id="g41"
+     inkscape:label="g29"
+     transform="translate(50,464)">
+    <circle
+       cx="220"
+       cy="180"
+       r="1.5"
+       fill="#d7e4bd"
+       id="circle31" />
+    <circle
+       cx="430"
+       cy="90"
+       r="2"
+       fill="#d7e4bd"
+       id="circle32" />
+    <circle
+       cx="600"
+       cy="220"
+       r="1"
+       fill="#d7e4bd"
+       id="circle33" />
+    <circle
+       cx="780"
+       cy="120"
+       r="2"
+       fill="#d7e4bd"
+       id="circle34" />
+    <circle
+       cx="900"
+       cy="300"
+       r="1.5"
+       fill="#d7e4bd"
+       id="circle35" />
+    <circle
+       cx="7.3731461"
+       cy="-185.82001"
+       fill="#d7e4bd"
+       id="circle42"
+       r="2" />
+    <circle
+       cx="319.09729"
+       cy="-211.10173"
+       fill="#d7e4bd"
+       id="circle43"
+       r="1.5" />
+  </g>
+</svg>

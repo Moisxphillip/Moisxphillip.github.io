@@ -1,0 +1,821 @@
+
+
+/*----------Variables for page----------*/
+:root
+{
+    --bg: #0b0e0d;/*Forest-night background*/
+    --bg-header: rgba(11,14,13,.88);/*Header background*/
+    --surface: #111613;/* Slightly lighter section/card surface*/
+    --surface-2: #171d19;/* Optional second surface*/
+    --text: #e8e9e2;/*Main text color*/
+    --muted: #98a096;/*Secondary text color*/
+    --line: #29332d;/*Borders, separators*/
+    --accent: #b9d77b;/*Accent, forest themed*/
+    --gold: #c9ae72;/*Warm accent*/
+    --accent-dark: #121a0d;/*Dark text for accent colored buttons*/
+    --max: 1120px;/*Maximum readable width*/
+    --shadow: 0 25px 80px rgba(0,0,0,.28);/*Shadow*/
+}
+
+/*----------Rules----------*/
+*{box-sizing: border-box;}/*Padding inside declared widths*/
+
+html{scroll-behavior: smooth;}/*Animate jumps on page sections*/
+
+body
+{
+    margin: 0;/*Remove default body margin*/
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Manrope", system-ui, sans-serif;
+    line-height: 1.65;
+}
+
+a{color: inherit; text-decoration: none;}/*Remove default link styling*/
+
+a:hover{color: var(--accent);}/*Hover feedback*/
+
+.container/*Content wrapper*/
+{
+    width: min(calc(100% - 40px), var(--max));
+    margin-inline: auto;
+}
+
+h1,h2,h3{font-family: Georgia, "Times New Roman", serif;}/*Subtle fantasy hint, TODO: look for a better font*/
+
+.eyebrow
+{
+    color:var(--muted);
+    font-family: "DM Mono", monospace;
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.muted{color: var(--muted);}
+
+
+
+/* ----------Navigation---------- */
+
+.site-header
+{
+    position: sticky; top: 0; z-index: 20;/*Keep visible while scrolling*/
+    background: var(--bg-header);
+    backdrop-filter: blur(14px);/*Frosted-glass effect*/
+    border-bottom: 1px solid rgba(41,51,45,.8);
+}
+
+.nav {min-height: 70px; display: flex; align-items: center; justify-content: space-between; }
+
+.brand/*For the font on header*/
+{
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: -.06em;
+}
+
+.brand span{color: var(--accent);}/*The dot on header*/
+
+.nav-links 
+{
+    display: flex;
+    gap: 28px;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.nav-links a.active,.nav-links a:hover{color: var(--text);}/*Color of active and hovered links*/
+
+.nav-toggle
+{
+    display: none;
+    background: none;
+    border: 0;
+    color: var(--text);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+/* ---------- 4. HERO ---------- */
+.hero 
+{
+    display: grid; grid-template-columns: 1.2fr .7fr;/*Text gets more room than terminal*/
+    gap: 70px; align-items: center;
+    min-height: calc(100vh - 70px); padding-block: 90px;
+    position: relative;
+}
+
+.hero h1
+{
+    font-size: clamp(2.0rem,6vw,3.5rem);
+    line-height: .98;
+    letter-spacing: -.065em; 
+    margin: 22px 0; 
+    max-width: 850px;
+}
+
+.hero h1 em
+{
+    color: var(--accent);
+    font-style: normal;
+}
+
+.hero-text
+{
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 680px;
+}
+
+.actions
+{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 30px 0 22px;
+}
+
+.button
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 18px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: .88rem;
+}
+
+.button.primary
+{
+    background: var(--accent);
+    color: var(--accent-dark);
+    border-color: var(--accent);
+}
+
+.button.primary:hover
+{
+    color: var(--accent-dark);
+    border-color: var(--gold);
+    filter: brightness(1.1);
+}
+
+.button.secondary:hover{border-color: var(--accent);}
+
+.socials
+{
+    display: flex;
+    gap: 20px;
+    color: var(--muted);
+    font-family: "DM Mono",monospace;
+    font-size: .78rem;
+}
+
+/* ----------Terminal---------- */
+.hero-card 
+{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    opacity: 0.8;
+}
+
+.terminal-bar 
+{
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 13px;
+    border-bottom: 1px solid var(--line);
+    /* opacity: 0.6; */
+}
+
+.terminal-bar span
+{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--line);
+    /* opacity: 0.6; */
+}
+
+.hero-card pre
+{
+    margin: 0;
+    padding: 28px;
+    overflow: auto;
+    font: .82rem/1.9 "DM Mono", monospace;
+}
+
+.hero-card .accent{color: var(--accent);}
+
+.hero-card .muted{color: #65736a;}
+
+
+/* ----------The moon---------- */
+/* .moon-decoration
+{
+    position: sticky; width: 180px; height: 180px;left: min(calc(100% - 180px), var(--max));bottom: 10px;
+    border-radius: 50%;
+    background: rgba(178, 179, 176, 0.11);
+    box-shadow: 0 0 100px rgba(129, 129, 129, 0.11);
+    pointer-events: none;
+    z-index: -1;
+} */
+
+
+/* ----------Sections---------- */
+.section{padding-block: 110px;}
+
+.section-alt
+{
+    background: var(--surface);
+    border-block: 1px solid var(--line);
+}
+
+.section-heading
+{
+    display: flex;
+    align-items: baseline;
+    gap: 18px; 
+    margin-bottom: 45px;
+}
+
+.section-heading span
+{
+    color: var(--muted);
+    font: .75rem "DM Mono",monospace;
+}
+
+.section-heading h2
+{
+    margin: 0; 
+    font-size: 2rem;
+    letter-spacing: -.04em;
+}
+
+.two-column
+{
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 80px;
+}
+
+.two-column p
+{
+    color: var(--muted);
+    max-width: 680px;
+}
+
+.fact-list{border-top: 1px solid var(--line);}
+
+.fact-list div 
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: .9rem;
+}
+
+.fact-list span{color: var(--muted);}
+
+/* ---------- Projects ---------- */
+.projects-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project
+{
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.project.featured
+{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-media
+{
+    min-height: 230px;
+}
+
+.featured .project-media
+{
+    min-height: 360px;
+}
+
+/*placeholder for images on projects*/
+.fantasy-placeholder 
+{
+    display: grid; place-items: center;
+    background:
+        linear-gradient(135deg,rgba(38,54,42,.65) 25%,transparent 25%) -10px 0/20px 20px,
+        linear-gradient(225deg,rgba(38,54,42,.65) 25%,transparent 25%) -10px 0/20px 20px,
+        linear-gradient(315deg,rgba(38,54,42,.65) 25%,transparent 25%) 0 0/20px 20px,
+        linear-gradient(45deg,rgba(38,54,42,.65) 25%,#0d1110 25%) 0 0/20px 20px;
+    color: #58645d; font: .7rem "DM Mono",monospace;
+}
+
+.project-image
+{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-body{padding: 28px;}
+
+.project-meta
+{
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font: .68rem "DM Mono", monospace;
+    text-transform: uppercase;
+}
+
+.project h3
+{
+    font-size: 1.4rem;
+    margin: 18px 0 10px;
+    letter-spacing: -.03em;
+}
+
+.project p
+{
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.tags
+{
+    list-style: none;
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.tags li
+{
+    border: 1px solid var(--line);
+    padding: 4px 8px;
+    color: var(--muted);
+    border-radius: 3px;
+    font: .68rem "DM Mono", monospace;
+}
+
+.project-links
+{
+    display: flex;
+    gap: 18px;
+    font-size: .82rem;
+    font-weight: 700;
+}
+
+.disabled-link
+{
+    opacity: .35;
+    pointer-events: none;
+}
+
+/* ----------Skills---------- */
+.skills-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid var(--line);
+}
+
+.skill-group
+{
+    padding: 25px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.skill-group:nth-child(odd)
+{
+    padding-right: 40px;
+    border-right: 1px solid var(--line);
+}
+
+.skill-group:nth-child(even){padding-left: 40px;}
+
+.skill-group h3
+{
+    font-size: .95rem;
+    margin: 0 0 8px;
+}
+
+.skill-group p
+{
+    color: var(--muted);
+    margin: 0;
+}
+
+.timeline-item
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-top: 1px solid var(--line);
+    padding: 25px 0 5px;
+}
+
+.timeline-item h3
+{
+    margin: 0;
+}
+
+.timeline-date
+{
+    color: var(--muted);
+}
+
+.contact p
+{
+    color: var(--muted);
+    max-width: 600px;
+}
+
+/* ----------Other projects section---------- */
+.craft-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.craft-card
+{
+    position: relative;
+    display: block;
+    padding: 35px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    transition: transform .2s ease, border-color .2s ease;
+}
+
+.craft-card:hover
+{
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.craft-number
+{
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    color: var(--muted);
+    font: .7rem "DM Mono", monospace;
+}
+
+.craft-icon
+{
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.craft-card h3
+{
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+}
+
+.craft-card p
+{
+    color: var(--muted);
+}
+
+.craft-link
+{
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: .82rem;
+}
+
+/* ----------Footer---------- */
+.footer
+{
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .75rem;
+}
+
+.footer-inner
+{
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+
+/* ---------- Responsive design for phones/tablets---------- */
+@media (max-width: 800px) 
+{
+    .nav-toggle{display: block;}
+
+    /* Hidden until JS adds .open. */
+    .nav-links
+    {
+        display: none;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        top: 65px;
+        padding: 18px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links.open{display: flex;}
+
+    .hero,.two-column,.project.featured,.cv-grid{grid-template-columns: 1fr;}
+
+    .hero
+    {
+        gap: 45px;
+        padding-block: 70px;
+    }
+
+    .hero-card{display: none;}
+
+    .projects-grid,.craft-grid,.gallery-grid,.skills-grid{grid-template-columns: 1fr;}
+
+    .project.featured{grid-column: auto;}
+
+    .featured .project-media{min-height: 240px;}
+
+    .skill-group:nth-child(odd),
+    .skill-group:nth-child(even)
+    {
+        padding-inline: 0;
+        border-right: 0;
+    }
+
+    .track{grid-template-columns: 45px 1fr;}
+
+    .track audio{grid-column: 1/-1;}
+
+    .cv-top
+    {
+        align-items: start;
+        flex-direction: column;
+    }
+}
+
+/* ----------Secondary pages---------- */
+.page-hero { padding-block: 100px 50px; }
+
+.page-hero h1
+{
+    max-width: 850px;
+    font-size: clamp(2.0rem,6vw,3.5rem);
+    line-height: .95;
+    letter-spacing: -.065em;
+    margin: 20px 0;
+}
+
+.page-hero h1 em
+{
+    color: var(--accent);
+    font-style: normal;
+}
+
+.page-intro
+{
+    color: var(--muted);
+    max-width: 680px;
+    font-size: 1.05rem;
+}
+
+/* ----------3D gallery--------- */
+.gallery-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.gallery-item
+{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.gallery-image{min-height: 350px;}
+
+.gallery-info{padding: 25px;}
+
+.gallery-info h2
+{
+    margin: 8px 0;
+    font-size: 1.5rem;
+}
+
+.gallery-info p{color: var(--muted);}
+
+/* ----------Music/sfx---------- */
+.music-list{border-top: 1px solid var(--line);}
+
+.track
+{
+    display: grid;
+    grid-template-columns: 60px 1fr 300px;
+    gap: 25px;
+    align-items: center;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.track-number{color: var(--muted); font: .8rem "DM Mono",monospace;}
+
+.track h2{margin: 6px 0; font-size: 1.35rem;}
+
+.track p{color: var(--muted); margin: 0;}
+
+.track audio{width: 100%;}
+
+/* ----------Resume---------- */
+.cv-page{padding-block: 90px;}
+
+.cv-top 
+{
+    display: flex; align-items:end;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid var(--line);
+}
+
+.cv-top h1 
+{
+    font-size: clamp(2.0rem, 6vw, 3.5rem); line-height: 1; letter-spacing: -.06em; margin: 10px 0;
+}
+
+.cv-subtitle{color: var(--muted);}
+
+.cv-grid
+{
+    display: grid;
+    grid-template-columns: 1.5fr .7fr;
+    gap: 80px;
+}
+
+.cv-section
+{
+    padding-block: 40px;
+    border-bottom: 1px solid var(--line);
+}
+
+.cv-section h2
+{
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-family: "DM Mono", monospace;
+    color: var(--muted);
+    margin: 0 0 25px;
+}
+
+.cv-section p{color: var(--muted);}
+
+.cv-entry{margin-bottom: 30px;}
+
+.cv-entry-heading 
+{ 
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cv-entry-heading h3
+{
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.cv-entry-heading span 
+{
+    color: var(--muted); 
+    font: .7rem "DM Mono",monospace; 
+    white-space: nowrap;
+}
+
+/* 
+.social-link
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; /*Space between text and icon*/
+    /*text-decoration: none;
+} */
+
+
+.link-icon
+{
+    width: 14px;  /* Adjust size as needed */
+    height: 14px;
+}
+
+
+
+/*##################################################################################
+    
+                    Background decoration
+
+###################################################################################*/
+.background
+{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.content /*For test page */
+{
+    position: relative;
+    z-index: 1;
+    width: min(900px, 90%);
+    margin: auto;
+}
+
+.moon
+{
+    position: relative;
+    z-index: -2;
+    left: 55%;
+    top: 65%;
+    width: 180px;
+    opacity: 0.3;
+    filter: drop-shadow(0 0 35px rgba(215, 228, 189, 0.2));
+    transform: translateY(0);
+}
+
+.stars 
+{
+    background-image: url("../assets/svg/stars.svg");
+    background-repeat: repeat;
+    /* background-size: 1000px 800px; */
+    align-self: center;
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    opacity: 0.3;
+    filter: drop-shadow(0 0 35px rgba(215, 228, 189, 0.2));
+    object-fit: cover;
+    transform: translateY(0);
+}
+
+.trees
+{
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 77%;
+    width: 100%;
+    opacity: 0.5;
+}
+
